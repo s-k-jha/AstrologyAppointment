@@ -1,0 +1,60 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #5f3c08;
+
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fdd48e;
+  color: #5f3c08;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-card button:hover {
+  background-color: #5f3c08;
+  color: #fdd48e;
+}
+
+.login-card p {
+  margin-top: 1rem;
+  text-align: center;
+  color: #5f3c08;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,122 @@
+.booking-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f1f8e9, #ffffff);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booking-card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.booking-card h2 {
+  text-align: center;
+  color: #5f3c08;
+  margin-bottom: 1.5rem;
+}
+
+.slot-option {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.slot-option:hover {
+  border-color: #5f3c08;
+}
+
+.slot-option input[type="radio"] {
+  margin-right: 0.75rem;
+  accent-color: #5f3c08;
+}
+
+.booking-card button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color:  #fdd48e;
+  color: #5f3c08;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.booking-card button:hover {
+  background-color: #5f3c08;
+  color: #fdd48e;
+}
+.date-section {
+  margin-bottom: 1.5rem;
+}
+
+.date-section h2 {
+  text-align: center;
+  color: #5f3c08;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.date-option {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-color: #ffffff;
+}
+
+.date-option:hover {
+  border-color: #5f3c08;
+}
+
+.date-option input[type="date"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #5f3c08;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.date-option input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #5f3c08;
+  cursor: pointer;
+  filter: invert(0.4) sepia(1) saturate(3) hue-rotate(15deg);
+}
+
+.date-option input[type="date"]::-webkit-datetime-edit {
+  color: #5f3c08;
+}
+
+.date-option input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  color: #5f3c08;
+}
+
+.date-option input[type="date"]::-moz-focus-inner {
+  border: 0;
+}
+
+.date-option:focus-within {
+  border-color: #5f3c08;
+  box-shadow: 0 0 0 2px rgba(95, 60, 8, 0.1);
+}
