@@ -85,3 +85,13 @@
   color: #5f3c08;
   border-color: #fdd48e;
 }
+
+@media (max-width: 768px) {
+  .signup-card {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 60%;
+}
+}

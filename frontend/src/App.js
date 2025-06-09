@@ -19,6 +19,7 @@ const App = () => (
     <Router>
       <Navbar />
       <Routes>
+        <Route path="/" element={<Login />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />

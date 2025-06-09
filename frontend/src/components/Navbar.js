@@ -11,15 +11,17 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <Link to='/dashboard' className="logo">
+        <img src={NavImage} alt="DivineTalk Logo" className="logo-image" />
+      </Link>
       <button className="navbar-toggle" onClick={toggleMenu}>
         ☰
       </button>
 
+
       <div className={`navbar-left ${menuOpen ? "show" : ""}`}>
 
-        <Link to='/dashboard' className="logo">
-          <img src={NavImage} alt="DivineTalk Logo" className="logo-image" />
-        </Link>
+
 
         <Link to="/dashboard">Dashboard</Link>
         {user && <Link to="/appointments">My Appointments</Link>}
@@ -32,7 +34,7 @@ const Navbar = () => {
           <>
             <Link to="/login">Login</Link>
             <Link to="/signup">Signup</Link>
-            <Link to="/admin">Admin Panel</Link>
+            <Link to="/admin">Admin</Link>
 
           </>
         )}
