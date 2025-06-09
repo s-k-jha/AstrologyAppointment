@@ -49,7 +49,7 @@ const Admin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/astrologers", form);
+      await axios.post("https://astrologer-backend-qvgo.onrender.com/astrologers", form);
       toast.success(`Welcome ${form.name} to DivineTalk!`);
       console.log("form submitted for astro creation", form);
     } catch (error) {

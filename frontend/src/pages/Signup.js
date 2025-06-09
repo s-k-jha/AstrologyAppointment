@@ -13,7 +13,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/auth/signup", form);
+      await axios.post("https://astrologer-backend-qvgo.onrender.com/auth/signup", form);
       toast.success(`welcome ${form.name} to DivineTalk!`)
     } catch (error) {
       toast.error("Singup Failed, try again!");

@@ -9,7 +9,7 @@ const ViewAppointments = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/appointments", {
+    axios.get("https://astrologer-backend-qvgo.onrender.com/appointments", {
       headers: {
         Authorization: `Bearer ${user.token}`,
       },

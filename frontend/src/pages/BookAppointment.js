@@ -13,7 +13,7 @@ const BookAppointment = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:5000/astrologers").then((res) => {
+    axios.get("https://astrologer-backend-qvgo.onrender.com/astrologers").then((res) => {
       const astro = res.data.find((a) => a._id === id);
       setSlots(astro?.timeSlots || []);
       console.log("astro details for timeslot", astro);
@@ -27,7 +27,7 @@ const BookAppointment = () => {
     }
 
     await axios.post(
-      "http://localhost:5000/appointments",
+      "https://astrologer-backend-qvgo.onrender.com/appointments",
       {
         astrologerId: id,
         time,

@@ -10,7 +10,7 @@ const Dashboard = () => {
   const [astrologers, setAstrologers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/astrologers").then((res) => {
+    axios.get("https://astrologer-backend-qvgo.onrender.com/astrologers").then((res) => {
       setAstrologers(res.data);
     });
   }, []);
