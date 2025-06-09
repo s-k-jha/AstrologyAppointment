@@ -139,7 +139,6 @@ const Admin = () => {
                 disabled={!form.name || form.skills.length === 0 || form.timeSlots.length === 0}
                 className="submit-button"
               >
-                <span className="button-icon">➕</span>
                 Create Astrologer Profile
               </button>
             </div>
