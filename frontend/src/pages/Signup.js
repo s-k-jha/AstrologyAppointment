@@ -50,9 +50,9 @@ const Signup = () => {
 
 
         <button type="submit">Signup</button>
-        <div className="account-create-section">
+        {/* <div className="account-create-section">
           <a href="/login" className="account-create">Login to account?</a>
-        </div>
+        </div> */}
       </form>
       <ToastContainer
         position={"top-center"}

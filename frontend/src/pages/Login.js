@@ -45,9 +45,9 @@ const Login = () => {
           required
         />
         <button type="submit">Login</button>
-        <div  className="account-create-section">
+        {/* <div  className="account-create-section">
           <a href="/signup"  className="account-create">Create an account?</a>
-        </div>
+        </div> */}
       </form>
       <ToastContainer
         position={"top-center"}
