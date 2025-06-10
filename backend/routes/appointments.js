@@ -4,7 +4,6 @@ const auth = require("../middleware/authMiddleware");
 const Appointment = require("../models/Appointment");
 
 router.post("/", auth, async (req, res) => {
-  console.log("request body check ", req.body);
   const { astrologerId, time, date } = req.body;
   const newAppt = await Appointment.create({ userId: req.user.id, astrologerId, time, date });
   res.json(newAppt);

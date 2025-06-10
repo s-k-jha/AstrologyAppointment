@@ -69,7 +69,6 @@ const BookAppointment = () => {
               type="date"
               name="date"
               value={date}
-              // onChange={(e) => setDate(e.target.value)}
               onChange={(e) => {
                 const selectedDate = e.target.value;
                 setDate(selectedDate);
@@ -80,21 +79,7 @@ const BookAppointment = () => {
           </label>
         </div>
         <h2>Select Time Slot</h2>
-        {/* {slots.length > 0 ? (
-          slots.map((slot, i) => (
-            <label className="slot-option" key={i}>
-              <input
-                type="radio"
-                name="time"
-                value={slot}
-                onChange={(e) => setTime(e.target.value)}
-              />
-              {slot}
-            </label>
-          ))
-        ) : (
-          <p>No time slots available.</p>
-        )} */}
+        
         {slots.length > 0 ? (
           slots.map((slot, i) => {
             const isBooked = bookedSlots.includes(slot);
@@ -112,7 +97,7 @@ const BookAppointment = () => {
                   name="time"
                   value={slot}
                   onChange={(e) => setTime(e.target.value)}
-                  disabled={isBooked} // <-- disables the input too
+                  disabled={isBooked} 
                 />
                 {slot}
               </label>
@@ -121,10 +106,6 @@ const BookAppointment = () => {
         ) : (
           <p>No time slots available.</p>
         )}
-
-
-
-
         <button onClick={book}>Book Appointment</button>
       </div>
     </div>
